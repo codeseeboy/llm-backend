@@ -1,10 +1,14 @@
-# Multi-LLM Backend
+# 🤖 Multi-LLM Backend
 
-A FastAPI backend that exposes **one unified API** for sending a text prompt
-plus optional media (images, PDFs, DOCX, XLSX, HTML, MD, TXT, etc.) and
-returns an LLM response. Internally it tries a chain of LLM providers in
-priority order and **automatically falls back** to the next one when a
-provider is rate-limited, expired, or unavailable.
+> A FastAPI backend that exposes **one unified API** for sending a text prompt plus optional media (images, PDFs, DOCX, XLSX, HTML, MD, TXT, etc.) and returns an LLM response. Internally it tries a chain of LLM providers in priority order and **automatically falls back** to the next one when a provider is rate-limited, expired, or unavailable — so generation keeps working even when a provider goes down.
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=googlegemini&logoColor=white)
+![Groq](https://img.shields.io/badge/Groq-F55036?style=flat-square&logo=groq&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
+
+> Powers ad-script generation for [AddX](https://github.com/codeseeboy/addX). One API key is enough to start; add more providers for more resilient fallback.
 
 ## Supported providers
 
@@ -179,3 +183,7 @@ backend/
 ├── run.py
 └── README.md
 ```
+
+---
+
+Built by **Shashikant Rajput** — [LinkedIn](https://www.linkedin.com/in/shashikant-rajput) · [Portfolio](https://ezzshashi.netlify.app)
